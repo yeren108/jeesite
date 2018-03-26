@@ -32,7 +32,8 @@ public class MobileInterceptor extends BaseService implements HandlerInterceptor
 		if (modelAndView != null){
 			// 如果是手机或平板访问的话，则跳转到手机视图页面。
 			if(UserAgentUtils.isMobileOrTablet(request) && !StringUtils.startsWithIgnoreCase(modelAndView.getViewName(), "redirect:")){
-				modelAndView.setViewName("mobile/" + modelAndView.getViewName());
+				//TODO 这是手机适配页面，暂时未开发
+				//modelAndView.setViewName("mobile/" + modelAndView.getViewName());
 			}
 		}
 	}
