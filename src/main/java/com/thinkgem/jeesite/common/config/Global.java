@@ -151,7 +151,8 @@ public class Global {
 		String dir = getConfig("userfiles.basedir");
 		if (StringUtils.isBlank(dir)) {
 			try {
-				dir = ServletContextFactory.getServletContext().getRealPath("/");
+//				dir = ServletContextFactory.getServletContext().getRealPath("/");
+				dir ="/common/file/";
 			} catch (Exception e) {
 				return "";
 			}
