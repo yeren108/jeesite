@@ -3,10 +3,17 @@ comment on column SYS_ROLE.is_sys is '是否系统数据';
 comment on column SYS_ROLE.useable is '是否启用';
 update SYS_ROLE set useable='1';
 
+<<<<<<< HEAD
 alter table sys_user add (LOGIN_FLAG varchar2(64),PHOTO varchar2(100));
 comment on column sys_user.LOGIN_FLAG is '是否可登陆';
 comment on column sys_user.PHOTO is '头像';
 update sys_user set LOGIN_FLAG='1';
+=======
+alter table SYS_USER add (LOGIN_FLAG varchar2(64),PHOTO varchar2(100));
+comment on column SYS_USER.LOGIN_FLAG is '是否可登陆';
+comment on column SYS_USER.PHOTO is '头像';
+update SYS_USER set LOGIN_FLAG='1';
+>>>>>>> upstream/master
 
 alter table SYS_OFFICE add (USEABLE varchar2(64),PRIMARY_PERSON varchar2(64),DEPUTY_PERSON varchar2(64));
 comment on column SYS_OFFICE.USEABLE is '是否可用';

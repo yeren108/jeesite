@@ -222,7 +222,11 @@
 				</div>
 			</div>
 		    <div id="footer" class="row-fluid">
+<<<<<<< HEAD
 	            Copyright &copy; 2012-${fns:getConfig('copyrightYear')} ${fns:getConfig('productName')} - Powered By <a href="http://www.yeren108.cn" target="_blank">yeren108</a> ${fns:getConfig('version')}
+=======
+	            Copyright &copy; 2012-${fns:getConfig('copyrightYear')} ${fns:getConfig('productName')} - Powered By <a href="http://jeesite.com" target="_blank">JeeSite</a> ${fns:getConfig('version')}
+>>>>>>> upstream/master
 			</div>
 		</div>
 	</div>
