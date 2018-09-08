@@ -109,17 +109,11 @@
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>
 		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
-<<<<<<< HEAD
 		<!-- <init-param>
 			<param-name>allow</param-name>
 			<param-value>127.0.0.1</param-value>
 		</init-param> -->
-=======
-		<init-param>
-			<param-name>allow</param-name>
-			<param-value>127.0.0.1</param-value>
-		</init-param>
->>>>>>> upstream/master
+
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DruidStatView</servlet-name>
