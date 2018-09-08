@@ -80,7 +80,7 @@ public class Global {
 	/**
 	 * 获取配置
 	 * 
-	 * @see ${fns:getConfig('adminPath')}
+	 * @see {fns:getConfig('adminPath')}
 	 */
 	public static String getConfig(String key) {
 		String value = map.get(key);
@@ -151,12 +151,8 @@ public class Global {
 		String dir = getConfig("userfiles.basedir");
 		if (StringUtils.isBlank(dir)) {
 			try {
-<<<<<<< HEAD
 //				dir = ServletContextFactory.getServletContext().getRealPath("/");
 				dir ="/common/file/";
-=======
-				dir = ServletContextFactory.getServletContext().getRealPath("/");
->>>>>>> upstream/master
 			} catch (Exception e) {
 				return "";
 			}

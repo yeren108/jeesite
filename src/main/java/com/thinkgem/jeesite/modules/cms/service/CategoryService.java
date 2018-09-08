@@ -38,14 +38,11 @@ public class CategoryService extends TreeService<CategoryDao, Category> {
 	private Category entity = new Category();
 	
 	@SuppressWarnings("unchecked")
-<<<<<<< HEAD
 	/**
 	 * @param isCurrentSite 是否是当前的站点（通过当前站点的用户查找）
 	 * @param module
 	 * @return
 	 */
-=======
->>>>>>> upstream/master
 	public List<Category> findByUser(boolean isCurrentSite, String module){
 		
 		List<Category> list = (List<Category>)UserUtils.getCache(CACHE_CATEGORY_LIST);
